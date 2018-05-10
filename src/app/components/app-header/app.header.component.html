@@ -1,0 +1,18 @@
+<header>
+    <nav>
+        <div class="logo-img">
+           <a href="#"><img src="/assets/images/visalogo.png" title="Visa logo"></a>
+        </div>
+        <div class="list-items">
+            <div class="list-items-inner" (click)="onMenuChange($event, 1)" [ngClass]="{active: selectedIndex === 1}" ><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Pay With Visa</a></div>
+            <div class="list-items-inner" (click)="onMenuChange($event, 2)" [ngClass]="{active: selectedIndex === 2}"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Partner with Us</a></div>
+            <div class="list-items-inner" (click)="onMenuChange($event, 3)" [ngClass]="{active: selectedIndex === 3}"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Run Your Business</a></div>
+            <div class="list-items-inner" (click)="onMenuChange($event, 4)" [ngClass]="{active: selectedIndex === 4}"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Travel With Visa</a></div>
+            <div class="list-items-inner" (click)="onMenuChange($event, 5)" [ngClass]="{active: selectedIndex === 5}"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Visa Everywhere</a></div>
+            <div class="hamburger"><img src="/assets/images/hamb.jpg"></div>
+            <div class="list-items-inner" (click)="onMenuChange($event, 6)" [ngClass]="{active: selectedIndex === 6}"><i class="fa fa-search"></i></div>
+            <img [hidden]="selectedIndex == 0" [ngStyle]="{left: animationLeftPosition}" src="/assets/images/indicator.png" class="nav-indicator" />
+        </div>
+    </nav>
+
+</header>
